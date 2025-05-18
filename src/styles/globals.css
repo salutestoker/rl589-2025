@@ -60,17 +60,17 @@ a {
     align-items: center;
     list-style: none;
     flex-wrap: wrap;
+    gap: 15px;
 
     @media screen and (max-width: 900px) {
       justify-content: center;
+
     }
 
     li {
       text-transform: uppercase;
 
-      &:not(:last-child):not(.telegram-logo) {
-        margin-right: 30px;
-      }
+
 
       &:nth-child(3) {
         @media screen and (max-width: 900px) {
@@ -78,7 +78,7 @@ a {
         }
       }
 
-      &:not(:nth-last-child(-n + 2)) {
+      &:not(:nth-last-child(-n + 1)) {
         a {
           position: relative;
 
@@ -110,19 +110,16 @@ a {
   border-left: 1px solid white;
   display: flex;
   padding-left: 35px;
+  gap: 16px;
+  margin-left: 15px;
 
   @media screen and (max-width: 900px) {
     border: none;
     width: 100%;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 8px;
     padding-left: 0;
-  }
-}
-
-.socials li:first-child {
-  @media screen and (max-width: 900px) {
-    margin-right: 15px !important;
+    margin-left: 0;
   }
 }
 
@@ -157,6 +154,22 @@ a {
   img {
     max-width: 15px;
     height: auto;
+  }
+}
+
+.tiktok-logo {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 100%;
+
+  img {
+    max-width: 25px;
+    margin: 0 auto;
+    transform: translateX(2px);
   }
 }
 

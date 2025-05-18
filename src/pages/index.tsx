@@ -108,6 +108,17 @@ export default function Home() {
                                 <Image src="/x-logo-black.png" width={20} height={20} alt="X (Twitter)" />
                             </a>
                         </li>
+
+                            <li>
+                                <a
+                                    className="tiktok-logo"
+                                    href="https://t.co/jviDnLi5G8"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <Image src="/tiktok-black.svg" width={20} height={20} alt="Tiktok" />
+                                </a>
+                            </li>
                         </div>
                     </ul>
                 </header>
