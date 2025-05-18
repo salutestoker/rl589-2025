@@ -18,6 +18,11 @@
   max-width: 50px;
   height: auto;
   z-index: 1;
+
+  @media screen and (max-width: 900px) {
+    max-width: 80px;
+    margin-bottom: 15px;
+  }
 }
 
 .intro-video {

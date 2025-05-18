@@ -38,7 +38,7 @@ a {
 
 .header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,8 +49,6 @@ a {
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
   }
 
   a {
@@ -61,6 +59,11 @@ a {
     display: flex;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 900px) {
+      justify-content: center;
+    }
 
     li {
       text-transform: uppercase;
@@ -69,8 +72,10 @@ a {
         margin-right: 30px;
       }
 
-      &:nth-last-child(2) {
-        border-left: 1px solid white;
+      &:nth-child(3) {
+        @media screen and (max-width: 900px) {
+          margin-right: 0 !important;
+        }
       }
 
       &:not(:nth-last-child(-n + 2)) {
@@ -101,6 +106,26 @@ a {
   }
 }
 
+.socials {
+  border-left: 1px solid white;
+  display: flex;
+  padding-left: 35px;
+
+  @media screen and (max-width: 900px) {
+    border: none;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+    padding-left: 0;
+  }
+}
+
+.socials li:first-child {
+  @media screen and (max-width: 900px) {
+    margin-right: 15px !important;
+  }
+}
+
 
 .telegram-logo,
 .x-logo {
@@ -118,7 +143,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 35px;
 }
 
 .x-logo {
@@ -169,7 +193,7 @@ a {
     height: auto;
 
     @media screen and (max-width: 900px) {
-      max-width: 200px;
+      max-width: 275px;
     }
   }
 }
@@ -190,6 +214,27 @@ svg {
   z-index: 2;
   color: white;
   font-size: 20px;
+}
+
+.token-dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  color: white;
+  max-width: 1200px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+  }
 }
 
 
@@ -216,3 +261,4 @@ svg {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
+

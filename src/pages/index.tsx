@@ -87,7 +87,7 @@ export default function Home() {
                                 Merch
                             </a>
                         </li>
-
+                        <div className="socials">
                         <li>
                             <a
                                 className="telegram-logo"
@@ -108,6 +108,7 @@ export default function Home() {
                                 <Image src="/x-logo-black.png" width={20} height={20} alt="X (Twitter)" />
                             </a>
                         </li>
+                        </div>
                     </ul>
                 </header>
 

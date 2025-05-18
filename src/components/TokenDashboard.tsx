@@ -51,21 +51,7 @@ export const TokenDashboard = () => {
     /** ---------- layout ---------- */
     return (
         <div
-            style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: '1.5rem',
-                width: '100%',
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                padding: '0 20px',
-                color: 'white',
-                maxWidth: '1200px',
-                fontFamily: 'Arial',
-
-            }}
+            className="token-dashboard"
         >
             <Card>
                 <CardHeader><CardTitle style={{ marginBottom: '.25rem' }}><Image

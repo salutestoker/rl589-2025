@@ -9,8 +9,24 @@
   padding: 2vw;
   min-height: 100dvh;
 
+
   /* ↓↓ new ↓↓ */
   justify-content: center; /* packs columns horizontally */
   align-content:   center; /* packs rows vertically  */
   /* or simply: place-content: center;  (shorthand for both) */
+
+  @media screen and (max-height: 1225px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 220px;
+    padding-bottom: 30px;
+
+    > * > a {
+      max-width: 100%;
+    }
+  }
 }
