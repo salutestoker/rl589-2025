@@ -132,7 +132,7 @@ export default function Home() {
                                             playsInline
                                         />
                                     </div>
-                                    <div className="logo">
+                                    <div className="large-logo">
                                         <Image
                                             width={562}
                                             height={395}

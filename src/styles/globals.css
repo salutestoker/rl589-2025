@@ -47,6 +47,12 @@ a {
   color: white;
   top: 0;
 
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   a {
     font-size: 18px;
   }
@@ -94,6 +100,7 @@ a {
     }
   }
 }
+
 
 .telegram-logo,
 .x-logo {
@@ -150,13 +157,21 @@ a {
   gap: 1rem;
 }
 
-
-.logo {
+.large-logo {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+
+  img {
+    max-width: 350px;
+    height: auto;
+
+    @media screen and (max-width: 900px) {
+      max-width: 200px;
+    }
+  }
 }
 svg {
   text {
