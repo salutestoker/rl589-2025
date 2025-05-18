@@ -1,0 +1,16 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  padding: 2vw;
+  min-height: 100dvh;
+
+  /* ↓↓ new ↓↓ */
+  justify-content: center; /* packs columns horizontally */
+  align-content:   center; /* packs rows vertically  */
+  /* or simply: place-content: center;  (shorthand for both) */
+}
